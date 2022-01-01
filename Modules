@@ -1,0 +1,19 @@
+// export 
+export class Point{
+    x:number;
+    y:number;
+
+    constructor(x:number = 2, y:number=8){
+        this.x = x;
+        this.y = y;
+    }
+
+    draw= ()=>{console.log("X: "+ this.x + " Y: "+this.y)};
+
+}
+
+// import
+import {Point} from './point';
+// a constructor is always called whenever the object is created!
+let point = new Point();
+point.draw();
